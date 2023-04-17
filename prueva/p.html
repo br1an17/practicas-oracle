@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador ONE</title>
+    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="b.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9ab62045ea.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/logo.png"> 
+</head>
+<body>
+
+    <script src="app.js"></script>
+
+    <div class="flex">
+        <main>
+            <header>
+                <img class="logo" src="images/logo.png" alt="logo de la página">
+                <h1 class="principal-title">Encriptador</h1>
+            </header>
+            <textarea placeholder="Escribe el texto que desees encriptar o desencriptar..." id="texto"></textarea>
+            <div class="submit">
+                <button id="encriptar" onclick="encriptar(document.getElementById('texto').value)">Encriptar</button>
+                <button id="desencriptar" onclick="desencriptar(document.getElementById('texto').value)">Desencriptar</button>
+            </div>
+        </main>
+        <aside>
+            <div class="output-wrapper">
+                <div id="no-text-output" style="display: block;">
+                    <img src="images/lupa.png" alt="lupa">
+                    <h2>Ningún mensaje fue encontrado.</h2>
+                    <p>Ingresa el mensaje que <br> quieras desencriptar/encriptar.</p>
+                </div>
+                <div id="text-output" style="display: none;">
+                    <p id="texto-final"></p>
+                </div>
+                <br>
+                <button id="copy-button" style="bottom: 0; display: none;" onclick="copy()">Copiar al portapapeles</button>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <img src="images/firma_digital.png" alt="firma_digital">
+        <div class="icons">
+            <a href="https://www.instagram.com/diegopeeeeez/"><i class="fa-brands fa-instagram fa-3x" id="ig-icon"></i></a>
+            <a href="https://www.linkedin.com/in/diego-lopez-magdaleno"><i class="fa-brands fa-linkedin fa-3x" id="linkedin-icon"></i></a>
+            <a href="https://github.com/pecezon"><i class="fa-brands fa-github fa-3x" id="github-icon"></i></a>
+        </div>
+    </footer>
+    
+</body>
+</html>

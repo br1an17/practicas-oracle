@@ -1,0 +1,219 @@
+body{
+    background: black;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+header{
+    background-color: black;
+    padding: 10px 0 10px 20px;
+    display: flex;
+    width: 60%;
+}
+
+.principal-title{
+    font-size: 6vw;
+    font-weight: bold;
+    color: #22FF36;
+    padding-top: 0.5em;
+    vertical-align: top;
+}
+
+.logo{
+    width: 12vw;
+    height: 12vw;
+    display: inline-block;
+}
+
+aside{
+    width: 40%;
+    height: auto;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.output-wrapper{
+    width: 85%;
+    text-align: center;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #252525;
+    border: 1px solid #252525;
+    box-shadow: 30px -15px 50px rgba(34, 255, 54, 0.25), -30px 15px 50px rgba(34, 255, 54, 0.25);
+    border-radius: 30px;
+    flex-direction: column;
+    padding-bottom: 15px 0;
+}
+
+#no-text-output h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vw;
+    line-height: 3vw;
+    text-align: center;
+    color: #22FF36;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#no-text-output img{
+    width: 85%;
+}
+
+#no-text-output p{
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5vw;
+    line-height: 1.85vw;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#text-output{
+    padding: 25px;
+    color: white;
+    line-height: 1.5;
+    text-align: justify;
+    overflow: auto;
+    height: 70%;
+}
+
+#copy-button{
+    border: none;
+    border-radius: 10px;
+    transition: 3s background;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    color: #252525;
+    background: #22FF36;
+    margin-bottom: 10px;
+}
+
+main{
+    width: 60%;
+    flex: 1;
+    overflow: auto;
+}
+
+textarea {
+    margin: 0 30px;
+    width: calc(100% - 60px);
+    height: 300px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: black;
+    color: #22FF36;
+    font-size: 16px;
+    resize: none;
+}
+
+.submit{
+    display: flex;
+    padding: 40px 30px;
+    justify-content: space-around;
+}
+
+.submit button{
+    border: none;
+    border-radius: 10px;
+    transition: 3s background;
+    cursor: pointer;
+    padding: 10px;
+    width: 160px;
+    font-weight: 700;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+#encriptar{
+    background: #252525;
+    color: #22FF36;
+}
+
+#desencriptar{
+    color: #252525;
+    background: #22FF36;
+}
+
+.submit button:hover{
+    box-shadow: 30px -15px 50px rgba(34, 255, 54, 0.25), -30px 15px 50px rgba(34, 255, 54, 0.25);
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer img{
+    width: 15%;
+    margin: 0 auto;
+}
+
+footer i{
+    margin: 1vw 2vw;
+    color: #22ff36
+}
+
+#ig-icon:hover{
+    color: #C13584;
+}
+
+#linkedin-icon:hover{
+    color: #0077B5;
+}
+
+#github-icon:hover{
+    color: white;
+}
+
+@media screen and (max-width:800px){
+    .flex{
+        display: block;
+    }
+    main{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    .principal-title{
+        font-size: 8vw;
+    }
+    .logo{
+        width: 15vw;
+        height: 15vw;
+        display: inline-block;
+    }
+    #no-text-output h2{
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+    #no-text-output img{
+        width: 65%;
+    }
+    #no-text-output p{
+        font-size: 3vw;
+        line-height: 3.2vw;
+    }
+    footer img{
+        width: 25%;
+    }
+}

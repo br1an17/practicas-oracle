@@ -16,10 +16,10 @@ textoCopiar.value = texto.value
 
 
 const copiar = (e) =>  {
-    e.preventDefault( console.log(texto.value))
+   
     textoCopiar.value = texto.value
 
-    }
+e.preventDefault( console.log(textoCopiar.value)) }
 
 
 

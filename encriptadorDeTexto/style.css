@@ -43,9 +43,7 @@ table {
 }
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
-body {
-    background-color: #bacbdb;
-}
+
 
 h1 {
     padding-top: 15px;
@@ -65,25 +63,9 @@ label {
     font-family: "Roboto", sans-serif;
 }
 
-.container {
-    height: 500px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 
-.text-box1 {
-    width: 50%;
-    float: left;
-    display: grid;
-    place-items: center;
-}
 
-.text-box2 {
-    width: 50%;
-    float: right;
-    display: grid;
-    place-items: center;
-}
+
 
 #input-text,
 #encrypted-text {
@@ -134,3 +116,25 @@ label {
         margin-bottom: 1em;
     }
 } */ 
+body {
+    background-color: #bacbdb;
+}
+.container {
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    display: inline;
+}
+.text-box1 {
+    width: 50%;
+  
+    display: flex;
+
+}
+
+.text-box2 {
+    width: 50%;
+    display: flex;
+   
+}

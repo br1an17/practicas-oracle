@@ -142,6 +142,7 @@ border: none;
 color: #0A3871;
 margin-top: 90px;
 text-transform: lowercase;
+background-color: red;
 }
 
 ::placeholder{color:#0A3871 ;}

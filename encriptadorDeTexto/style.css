@@ -176,6 +176,7 @@ main {
   height: 67px;
   width: 328px;
   margin-right: 70px;
+  font-size: 24px;
 }
 .btnDesencriptar {
   background-color: #eff1fa;
@@ -184,5 +185,25 @@ main {
   color: #0a3871;
   cursor: pointer;
   height: 67px;
+  font-size: 24px;
+  
   width: 328px;
+}
+.btncopiar {
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+  color: #0a3871;
+  cursor: pointer;
+  height: 67px;
+  width: 328px;
+  margin-top: 400px;
+  margin-left: 100px;
+  
+  font-size: 24px;
+  position: absolute;
+}
+
+.info {
+  color: #495057;
+  font-size: 18px;
 }

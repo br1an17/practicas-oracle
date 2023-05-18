@@ -1,4 +1,4 @@
-const inputTexT = document.getElementById("input--text");
+const inputTexT = document.getElementById("input");
 const btnEncoder = document.getElementById("btn--encoder");
 const btnDecoder = document.getElementById("btn--decoder");
 const message = document.getElementById("message");

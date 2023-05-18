@@ -48,7 +48,7 @@ body {
   padding-bottom: 10px;
 }
 
-.encoder__input {
+.input {
   width: 100%;
   resize: none;
   color: #0a3871;
@@ -60,7 +60,7 @@ body {
   background: #eff1fa;
 }
 
-.encoder__input::placeholder {
+.input::placeholder {
   color: #0a3871;
   font-size: 32px;
   font-weight: 400;
@@ -236,7 +236,7 @@ footer {
     padding: 0 10px 0 10px;
   }
 
-  .encoder__input {
+  .input {
     height: 480px;
     margin: 0;
   }

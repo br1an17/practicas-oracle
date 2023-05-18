@@ -1,122 +1,4 @@
-/* html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-} */
-/* body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-
-
-
-h1 {
-    padding-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-footer {
-    padding-top: 20px;
-    text-align: center;
-}
-
-.descripcion,
-label {
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-}
-
-
-
-
-
-#input-text,
-#encrypted-text {
-    width: 80%;
-    border-radius: 4px;
-}
-
-#boton-encriptar,
-#boton-desencriptar,
-#boton-copiar {
-    position: flex;
-    width: 181px;
-    height: 37px;
-    background: #21235b;
-    border-radius: 10px;
-    font-family: "Roboto", sans-serif;
-}
-
-
-/* CSS para movil */
-
-/* @media screen and (max-width: 480px) {
-    .text-box1, .text-box2{
-        width: 100%;
-    }
-
-    .text-box1 > label, .text-box2 > label{
-        margin: 1em;
-    }
-
-    #boton-desencriptar, #boton-copiar{
-        margin-bottom: 1em;
-    }
-} */
-
-/* Tablet */
-
-/* @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .text-box1, .text-box2{
-        width: 100%;
-    }
-
-    .text-box1 > label, .text-box2 > label{
-        margin: 1em;
-    }
-
-    #boton-desencriptar, #boton-copiar{
-        margin-bottom: 1em;
-    }
-} */
-
+/* 
 * {
   background-color: #eff1fa;
   font-family: "inter";
@@ -133,7 +15,7 @@ label {
 main {
   display: flex;
   margin-bottom: 10px;
-  margin-left: 10px;
+  margin-left: 80px;
 }
 .textarea {
   border: none;
@@ -148,7 +30,15 @@ main {
 .textarea:focus {
   outline: none;
 }
-
+.a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 900px;
+    background-color: #ffffff;
+    border-radius: 32px;
+}
 .mensaje {
   background: white;
   background-image: url(../encriptadorDeTexto/img/Muñeco.png);
@@ -157,6 +47,7 @@ main {
   border-radius: 24px;
   color: #0a3871;
   margin-left: 20px;
+  margin-top: 20px;
   padding-left: 20px;
   position: fixed;
 }
@@ -206,4 +97,274 @@ main {
 .info {
   color: #495057;
   font-size: 18px;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: inter; 
+    background-color: #EFF1FA;
+}
+
+.header {
+    left: 44px;
+    top: 40px;
+    position: absolute;
+}
+
+.header a img {
+    width: 31px;
+    height: 44px;
+}
+
+.container {
+    padding-top: 40px;
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 2%;
+}
+
+.encoder__content {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 900px;
+}
+
+.encoder {
+    padding-bottom: 10px;
+}
+
+.encoder__input {
+    width: 100%;
+    resize: none;
+    color: #0A3871;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    height: 627px;
+    margin-bottom: 69px;
+    background: #EFF1FA;
+}
+
+.encoder__input::placeholder {
+    color: #0A3871;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+}
+
+.encoder__btn--container{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.encoder__btn {
+    width: 100%;
+    max-width: 328px;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    border: 2px solid #0A3871;
+    background: #EFF1FA;
+    border-radius: 32px;
+    padding: 22px;
+    cursor: pointer;
+}
+
+.encoder__btn--encriptar {
+    background: #0A3871;
+    color: #ffffff;    
+}
+
+.decoder__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 900px;
+    background-color: #ffffff;
+    border-radius: 32px;
+}
+
+.decoder__content--messageDefauld {
+    width: 84%;
+    text-align: center;
+    max-height: 100%;
+}
+
+.decoder__content--messageDefauld h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;  
+    color: #343A40;
+    margin: 5px 0;
+}
+
+.decoder__content--messageDefauld p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;  
+    color: #495057;
+    margin: 5px 0;
+}
+
+.decoder__content--decoderMessage {
+    width: 84%;
+    height: 95%;
+    text-align: center;
+    display: none;
+}
+
+.decoder__description {
+    padding-left: 10px;
+    width: 100%;
+    resize: none;
+    color: #0A3871;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    height: 717px;
+    margin-bottom: 69px;
+}
+
+.decoder__btn {
+    width: 100%;
+    max-width: 328px;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    border: 2px solid #0A3871;
+    background: #fff;
+    border-radius: 32px;
+    padding: 22px;
+    cursor: pointer;
+} 
+
+footer {
+    text-align: center;
+    margin: 50px 0 20px 0;
+
+}
+
+@media screen and (max-width: 768px){
+    .container {
+        width: 100%;
+        max-width: 768px;
+        justify-content: center;
+        display: block;
+        margin: 0;
+        padding: 110px 20px 0 20px;
+        gap: 0;
+    }
+
+    .encoder__content {
+        display: block;
+        width: 100%;
+        max-width: 768px;
+        height: 830px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .encoder__btn {
+        width: 100%;
+        max-width: 768px;
+        margin-bottom: 20px;
+    }
+
+    .decoder__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 768px;
+        height: 500px;
+        background-color: #ffffff;
+        border-radius: 24px;
+    }
+
+    .decoder__content--messageDefauld {
+        width: 100%;
+    }
+
+    .decoder__content--messageDefauld img {
+        display: none;
+    }
+
+    .decoder__content--decoderMessage {
+        width: 100%;
+    }
+
+    .decoder__description {
+        height: 336px;
+    }
+
+
+
+    .decoder__btn {
+        width: 100%;
+        max-width: 768px;
+        color: #0A3871;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.36px;
+        border: 2px solid #0A3871;
+        background: #fff;
+        border-radius: 24px;
+        padding: 22px;
+        cursor: pointer;
+    } 
+}
+
+@media screen and (max-width: 450px){
+    .encoder__content {
+        height: 660px;      
+        padding: 0 10px 0 10px;
+    }
+
+    .encoder__input {
+        height: 480px;
+        margin: 0;
+    }
+
+    .encoder__btn--container{
+     display: block;
+    }
+
+    .encoder__btn {
+        padding: 12px;
+    }
+
+    .decoder__content {
+        height: 350px;
+        padding: 0 10px 0 10px;
+    }
+
+    .decoder__description {
+        height: 260px;
+        margin-bottom: 0;
+        padding-right: 10px;
+    }
+
+    .decoder__btn {
+        padding: 12px;
+    } 
 }

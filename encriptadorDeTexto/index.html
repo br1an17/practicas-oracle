@@ -13,29 +13,40 @@
 </head>
 
 <body>
-    <header>
-        <img class="logo" src="././img/Vector.png" alt="logo alura">
+    <header class="header">
+        <a href="https://www.aluracursos.com/" target="blank">
+            <img src="./img/Vector.png" alt="Logo-Alura">
+        </a>
+       
     </header>
-    <main>
-        <section>
-            <textarea class="textarea" cols="30" rows="10" placeholder="Ingrese el tecto aqui"></textarea>
-            <div>
-                <h6 class="info">
-                    Solo letras minisculas y sin acento
-                </h6>
-            </div>
-            <div class="botones">
-                <button class="btnEncriptar">Encriptar</button>
-                <button class="btnDesencriptar">Desencriptar</button>
-            </div>
+    
+    <main class="container">
+        <section class="encoder__content">
+            <form>            
+                <div class="encoder">
+                    <textarea class="encoder__input" id="input--text" name="input--text" placeholder="Ingrese texto aqui..."></textarea>
+                    <label>
+                        Solo letras minusculas, sin acentos
+                    </label>
+                </div>
+                <div class="encoder__btn--container">
+                    <button class="encoder__btn encoder__btn--encriptar" id="btn--encoder" type="button">Encriptar</button>
+                    <button class="encoder__btn" id="btn--decoder" type="button">Desencriptar</button>
+                </div>
+            </form>
         </section>
-        <section>
-            <textarea class="mensaje" cols="30" rows="10"></textarea>
-        <div>
-            <button class="btncopiar">
-                copiar...
-            </button>
-        </div>
+        
+        <section class="decoder__content">
+            <div class="decoder__content--messageDefauld">
+                <img class="" src="./img/Muñeco.png" alt="Muñeco" width="100%">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="decoder__content--decoderMessage" >
+                <textarea class="decoder__description" id="message" name="decoder"></textarea>
+                <input class="decoder__btn" id="btn--copy" type="submit" value="Copiar">
+                <div id="copied--text"></div>
+            </div>                
         </section>
 
     </main>

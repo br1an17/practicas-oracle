@@ -44,7 +44,7 @@ body {
   height: 900px;
 }
 
-.encoder {
+.codificador {
   padding-bottom: 10px;
 }
 
@@ -67,13 +67,13 @@ body {
   line-height: 48px;
 }
 
-.encoderBtn{
+.botones{
   display: flex;
   justify-content: space-between;
   gap: 8px;
 }
 
-.btn {
+.boton {
   width: 100%;
   max-width: 328px;
   color: #0a3871;
@@ -87,7 +87,7 @@ body {
   cursor: pointer;
 }
 
-.encoder__btn--encriptar {
+.boton2 {
   background: #0a3871;
   color: #ffffff;
 }

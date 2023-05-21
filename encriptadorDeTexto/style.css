@@ -173,7 +173,7 @@ footer {
     gap: 0;
   }
 
-  .encoder__content {
+  .content {
     display: block;
     width: 100%;
     max-width: 768px;
@@ -182,7 +182,7 @@ footer {
     padding: 0;
   }
 
-  .encoder__btn {
+  .boton {
     width: 100%;
     max-width: 768px;
     margin-bottom: 20px;
@@ -199,23 +199,23 @@ footer {
     border-radius: 24px;
   }
 
-  .decodificador--messageDefauld {
+  .decodificadorMensaje {
     width: 100%;
   }
 
-  .decodificador--messageDefauld img {
+  .decodificadorMensaje img {
     display: none;
   }
 
-  .decodificador--decoderMessage {
+  .decodificadorMensaje2 {
     width: 100%;
   }
 
-  .decoder__description {
+  .decodificadorDescripcion {
     height: 336px;
   }
 
-  .decoder__btn {
+  .decodificadorBtn {
     width: 100%;
     max-width: 768px;
     color: #0a3871;
@@ -241,11 +241,11 @@ footer {
     margin: 0;
   }
 
-  .encoder__btn--container {
+  .botones {
     display: block;
   }
 
-  .encoder__btn {
+  .boton{
     padding: 12px;
   }
 
@@ -254,13 +254,13 @@ footer {
     padding: 0 10px 0 10px;
   }
 
-  .decoder__description {
+  .decodificadorDescripcion{
     height: 260px;
     margin-bottom: 0;
     padding-right: 10px;
   }
 
-  .decoder__btn {
+  .decodificadorBtn {
     padding: 12px;
   }
 }

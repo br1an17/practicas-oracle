@@ -1,7 +1,7 @@
 const inputTexT = document.getElementById("input");
-const btnEncoder = document.getElementById("btn--encoder");
-const btnDecoder = document.getElementById("btn--decoder");
-const message = document.getElementById("message");
+const btnEncoder = document.getElementById("boton");
+const btnDecoder = document.getElementById("boton");
+const message = document.getElementById("memsaje");
 const btnCopy = document.getElementById("btn--copy");
 const copy = document.getElementById("copied--text");
 

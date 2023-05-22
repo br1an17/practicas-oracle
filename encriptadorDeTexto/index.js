@@ -1,9 +1,9 @@
 const inputTexT = document.getElementById("input");
 const btnEncoder = document.getElementById("boton");
 const btnDecoder = document.getElementById("boton");
-const message = document.getElementById("memsaje");
-const btnCopy = document.getElementById("btn--copy");
-const copy = document.getElementById("copied--text");
+const message = document.getElementById("mensaje");
+const btnCopy = document.getElementById("copiar");
+const copy = document.getElementById("textoCopiado");
 
 let vowels = {
   a: "ai",

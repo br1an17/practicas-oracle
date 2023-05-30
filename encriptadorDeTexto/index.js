@@ -1,6 +1,6 @@
 const inputTexT = document.getElementById("input");
 const btnEncoder = document.getElementById("boton");
-const btnDecoder = document.getElementById("boton");
+const btnDecoder = document.getElementById("botonDecodedificador");
 const message = document.getElementById("mensaje");
 const btnCopy = document.getElementById("copiar");
 const copy = document.getElementById("textoCopiado");
@@ -23,14 +23,14 @@ let vowelsEncoder = {
 
 const validation = () => {
   if (inputTexT.value === "") {
-    document.querySelector(".decoder__content--messageDefauld").style.display =
+    document.querySelector(".decodificadorMensaje").style.display =
       "block";
-    document.querySelector(".decoder__content--decoderMessage").style.display =
+    document.querySelector(".decodificadorMensaje2").style.display =
       "none";
   } else {
-    document.querySelector(".decoder__content--messageDefauld").style.display =
+    document.querySelector(".decodificadorMensaje").style.display =
       "none";
-    document.querySelector(".decoder__content--decoderMessage").style.display =
+    document.querySelector(".decodificadorMensaje2").style.display =
       "block";
   }
 };
